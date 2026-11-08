@@ -1,0 +1,600 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cokkielife ♡</title>
+
+<style>
+* { box-sizing: border-box; }
+
+#calendario {
+    background: #fff0f6;
+    border: 2px solid #f7c8dc;
+    border-radius: 15px;
+    padding: 15px;
+    color: #9b5875;
+}
+
+#calendario h2 {
+    color: #d681a5;
+    justify-content: center;
+}
+
+#miCalendario {
+    background: #fff8fb;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    min-height: 100px;
+}
+
+body {
+    margin: 0;
+    padding: 25px 12px;
+    background-color: #ffeaf2;
+    background-image: radial-gradient(#f8c4d8 1px, transparent 1px);
+    background-size: 18px 18px;
+    color: #95677b;
+    font-family: Verdana, sans-serif;
+}
+
+a { color: #d878a2; text-decoration: none; }
+
+.contenedor {
+    max-width: 850px;
+    margin: auto;
+    background: #fffafd;
+    border: 3px solid #f6bfd5;
+    padding: 16px;
+    box-shadow: 0 5px 18px #eebbd0;
+}
+
+header {
+    text-align: center;
+    background: #ffe1ed;
+    border: 2px dashed #efa9c6;
+    padding: 25px 10px;
+}
+
+h1 {
+    color: #e47da9;
+    font-size: clamp(32px, 7vw, 52px);
+    margin: 8px;
+    text-shadow: 2px 2px white;
+}
+
+header p { margin: 6px; }
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 9px;
+    padding: 15px 0;
+}
+
+nav a {
+    background: #ffdce9;
+    border: 1px solid #f1b3cd;
+    border-radius: 20px;
+    padding: 9px 14px;
+    font-size: 12px;
+}
+
+nav a:hover { background: #f8c1d8; }
+
+.contenido {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 14px;
+}
+
+.caja {
+    background: white;
+    border: 2px solid #f7c9db;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 14px;
+}
+
+h2 {
+    color: #df82a8;
+    font-size: 17px;
+    border-bottom: 1px dashed #efb5cc;
+    padding-bottom: 8px;
+}
+
+.avatar {
+    font-size: 65px;
+    text-align: center;
+    background: #fff0f6;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.sticker {
+    display: inline-block;
+    background: #ffe6f0;
+    padding: 7px;
+    margin: 3px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+button {
+    background: #f5bad2;
+    color: #75485e;
+    border: 1px solid #e99cba;
+    border-radius: 15px;
+    padding: 9px 13px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+button:hover { background: #f9d1e2; }
+
+input, textarea {
+    max-width: 100%;
+    border: 1px solid #efbad0;
+    border-radius: 8px;
+    padding: 8px;
+    font-family: inherit;
+    color: #95677b;
+}
+
+textarea { width: 100%; }
+
+.foto {
+    width: 100%;
+    max-width: 160px;
+    border-radius: 10px;
+    border: 3px solid #ffd6e6;
+    margin: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 18px;
+    color: #d47fa2;
+    font-size: 12px;
+}
+
+@media(max-width: 580px) {
+    .contenido { grid-template-columns: 1fr; }
+}
+.controlesMes 
+
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin: 15px 0;
+    color: #d681a5;
+    font-weight: bold;
+}
+
+.controlesMes button {
+    background: #f9d5e4;
+    color: #a85e80;
+    border: none;
+    border-radius: 8px;
+    padding: 7px 12px;
+    cursor: pointer;
+}
+
+.rejillaCalendario {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 5px;
+    text-align: center;
+}
+
+.nombreDia {
+    font-weight: bold;
+    color: #d681a5;
+    padding: 8px 0;
+}
+
+.diaCalendario {
+    background: #ffe4ef;
+    color: #a85e80;
+    border: 1px solid #f7c8dc;
+    border-radius: 8px;
+    padding: 9px 0;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+<div class="contenedor">
+
+<header>
+    <div>୨୧ ♡ ୨୧</div>
+    <h1>cokkielife</h1>
+<img src="qt_sor.gif" width="100">
+    <p>♡ welcome to my little world ♡</p>
+    <p>✧･ﾟ: *✧･ﾟ:* *:･ﾟ✧*:･ﾟ✧</p>
+</header>
+
+<nav>
+    <a href="#about">♡ about me</a>
+    <a href="#music">♫ music</a>
+    <a href="#diary">♡ diary</a>
+    <a href="#gallery">✿ gallery</a>
+</nav>
+
+<div class="contenido">
+
+<aside>
+    <section class="caja" id="about">
+        <h2>🌷 About me</h2>
+        <div class="avatar">
+    <img src="asf.gif" width="100">
+</div>        <p><b>Hiii! Welcome!</b></p>
+        <p>Este es mi pequeño rincón de internet.</p>
+        <p>Me gusta...</p>
+        <span class="sticker">Anime</span>
+        <span class="sticker">Music</span>
+        <span class="sticker">Cute things</span>
+        <span class="sticker">Games</span>
+    </section>
+
+    
+<section class="caja" id="music">
+    <h2>𝄞 My little music corner ♡</h2>
+    <p>♫ a little collection of my favorite songs ♫</p>
+
+    <iframe
+        style="border-radius:12px"
+        src="https://open.spotify.com/embed/playlist/2pNkb56CbXWVY1qwLbkXDl?utm_source=generator&si=92508c8727d24634"
+        width="100%"
+        height="352"
+        frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+    </iframe>
+
+    <p>♡ made with music and love ♡</p>
+</section>
+   
+ <section class="caja">
+        <h2>/ᐠ - ˕ -マ Little things...</h2>
+        <p>✧ be kind</p>
+        <p>✧ enjoy the little things</p>
+        <p>✧ stay curious</p>
+    </section>
+    <section class="caja" id="moly">
+        <h2>🐾 Moly's little corner ♡</h2>
+
+        <div style="text-align:center; font-size:65px;">
+            <img id="imagenMoly" src="moly.png" width="180" alt="Moly">
+        </div>
+
+        <p style="text-align:center;">
+            Meet Moly! ♡
+        </p>
+<div style="text-align:center; margin:15px;">
+
+    <button onclick="alimentarMoly()">🦴 Dar comidita</button>
+
+    <button onclick="jugarMoly()">🎾 Jugar</button>
+
+    <button onclick="acariciarMoly()">💗 Acariciar</button>
+
+    <button onclick="dormirMoly()">🌙 Dormir</button>
+
+</div>
+
+<p id="mensajeMoly" style="text-align:center;">
+    ¡Hola! Soy Moly ♡
+</p>
+
+<p id="carinitosMoly" style="text-align:center;">
+    Cariñitos: 0 ♡
+</p>
+
+        <p>૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა</p>
+        <p>My little internet puppy!</p>
+    </section>
+</aside>
+
+<main>
+    <section class="caja">
+        <h2>💌 Welcome, visitor!</h2>
+        <p>
+        Holaaa ♡ Este sitio es un pequeño diario digital
+        donde puedo guardar mis gustos, fotografías,
+        música y recuerdos.
+        </p>
+        <p>Espero que te guste estar aquí. ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა</p>
+    </section>
+
+<section class="caja" id="calendario">
+
+    <h2 style="display:flex; align-items:center; gap:8px;">
+        ♡ My Little Calendar ♡
+        <img src="BHI2PGDAE5V7BCZO2BD2PF3IM44TQGKM.gif" width="35">
+    </h2>
+
+    <div class="controlesMes">
+    <button onclick="cambiarMes(-1)">❮</button>
+    <span id="nombreMes"></span>
+    <button onclick="cambiarMes(1)">❯</button>
+</div>
+
+<div id="diasCalendario"></div>
+
+<div id="notasCalendario">
+    <p id="diaSeleccionado">♡ Selecciona un día ♡</p>
+
+    <input
+        type="text"
+        id="textoEvento"
+        placeholder="Escribe tu eventito..."
+    >
+
+    <button onclick="guardarEvento()">♡ Guardar</button>
+
+    <div id="listaEventos"></div>
+</div>
+
+</section>
+
+    <section class="caja" id="diary">
+        <h2>༘⋆ My little diary</h2>
+        <p>Escribe una pequeña entrada para tu diario:</p>
+        <textarea id="entrada" rows="3"
+        placeholder="Hoy quiero contar que..."></textarea>
+        <br><br>
+        <button onclick="guardarEntrada()">Save entry ♡</button>
+        <div id="entradas"></div>
+    </section>
+
+    <section class="caja" id="gallery">
+        <h2>ᵔᴗᵔ My gallery</h2>
+        <p>¡Agrega tus propias imágenes y decoraciones!</p>
+        <input type="file" id="fotos" accept="image/*" multiple>
+        <div id="galeria"></div>
+    </section>
+</main>
+</div>
+
+<footer>
+    ୨୧ made with love ♡ cokkielife ୨୧
+    <p>thank you for visiting my page!</p>
+</footer>
+
+</div>
+
+<script>
+function guardarEntrada() {
+    const caja = document.getElementById("entrada");
+    const texto = caja.value.trim();
+
+    if (!texto) return;
+
+    const entradas = JSON.parse(
+        localStorage.getItem("misEntradas") || "[]"
+    );
+
+    entradas.unshift(texto);
+    localStorage.setItem("misEntradas", JSON.stringify(entradas));
+
+    caja.value = "";
+    mostrarEntradas();
+}
+
+function mostrarEntradas() {
+    const entradas = JSON.parse(
+        localStorage.getItem("misEntradas") || "[]"
+    );
+
+    document.getElementById("entradas").innerHTML = "";
+
+    entradas.forEach(texto => {
+        const tarjeta = document.createElement("div");
+        tarjeta.className = "seccion";
+        tarjeta.style.cssText =
+            "background:#fff0f6;padding:12px;margin-top:10px;border-radius:10px";
+        tarjeta.textContent = "♡ " + texto;
+        document.getElementById("entradas").appendChild(tarjeta);
+    });
+}
+
+mostrarEntradas();
+
+const baseDatosLista = new Promise((resolve, reject) => {
+    const solicitud = indexedDB.open("CokkielifeDB", 1);
+
+    solicitud.onupgradeneeded = function() {
+        solicitud.result.createObjectStore("fotos", {
+            keyPath: "id",
+            autoIncrement: true
+        });
+    };
+
+    solicitud.onsuccess = () => resolve(solicitud.result);
+    solicitud.onerror = () => reject(solicitud.error);
+});
+
+// Cargar fotos guardadas
+baseDatosLista.then(db => {
+    const galeria = document.getElementById("galeria");
+    const transaccion = db.transaction("fotos", "readonly");
+    const solicitud = transaccion.objectStore("fotos").getAll();
+
+    solicitud.onsuccess = function() {
+        solicitud.result.forEach(foto => {
+            const imagen = document.createElement("img");
+            imagen.className = "foto";
+            imagen.src = URL.createObjectURL(foto.archivo);
+            imagen.alt = "Imagen de mi galería";
+            galeria.appendChild(imagen);
+        });
+    };
+});
+
+// Guardar nuevas fotos
+document.getElementById("fotos").addEventListener("change", async function() {
+    const db = await baseDatosLista;
+    const galeria = document.getElementById("galeria");
+
+    for (const archivo of this.files) {
+        if (!archivo.type.startsWith("image/")) continue;
+
+        const transaccion = db.transaction("fotos", "readwrite");
+
+        transaccion.objectStore("fotos").add({
+            archivo: archivo
+        });
+
+        transaccion.oncomplete = function() {
+            const imagen = document.createElement("img");
+            imagen.className = "foto";
+            imagen.src = URL.createObjectURL(archivo);
+            imagen.alt = "Imagen de mi galería";
+            galeria.appendChild(imagen);
+        };
+    }
+});
+
+let carinitos = 0;
+
+function actualizarMensaje(texto) {
+    document.getElementById("mensajeMoly").textContent = texto;
+}
+
+function alimentarMoly() {
+    document.getElementById("imagenMoly").src = "moly_comiendo.png";
+    actualizarMensaje("¡ÑAM ÑAM! Moly está comiendo ♡");
+}
+
+function jugarMoly() {
+    document.getElementById("imagenMoly").src = "moly_jugando.png";
+    actualizarMensaje("¡WIII! Moly está jugando contigo 🎾");
+}
+
+function acariciarMoly() {
+    carinitos++;
+
+    document.getElementById("imagenMoly").src = "moly_feliz.png";
+
+    document.getElementById("carinitosMoly").textContent =
+        "Cariñitos: " + carinitos + " ♡";
+
+    actualizarMensaje("Moly está feliz con tus cariñitos 💗");
+}
+
+function dormirMoly() {
+    document.getElementById("imagenMoly").src = "moly_dormida(2).png";
+    actualizarMensaje("Zzz... Moly está dormidita 💤");
+}
+
+let fechaCalendario = new Date();
+
+let diaElegido = null;
+let eventos = JSON.parse(localStorage.getItem("eventosCokkielife")) || {};
+
+const nombresMeses = [
+    "Enero", "Febrero", "Marzo", "Abril",
+    "Mayo", "Junio", "Julio", "Agosto",
+    "Septiembre", "Octubre", "Noviembre", "Diciembre"
+];
+
+function mostrarCalendario() {
+    const mes = fechaCalendario.getMonth();
+    const anio = fechaCalendario.getFullYear();
+
+    document.getElementById("nombreMes").textContent =
+        nombresMeses[mes] + " " + anio;
+
+    const primerDia = new Date(anio, mes, 1).getDay();
+    const diasMes = new Date(anio, mes + 1, 0).getDate();
+
+    const nombresDias = ["D", "L", "M", "M", "J", "V", "S"];
+
+    let html = '<div class="rejillaCalendario">';
+
+    nombresDias.forEach(dia => {
+        html += `<div class="nombreDia">${dia}</div>`;
+    });
+
+    for (let i = 0; i < primerDia; i++) {
+        html += '<div></div>';
+    }
+
+    for (let dia = 1; dia <= diasMes; dia++) {
+       const claveDia = `${anio}-${mes + 1}-${dia}`;
+const corazon = eventos[claveDia] ? " ♥" : "";
+
+html += `<button class="diaCalendario" onclick="seleccionarDia(${dia})">${dia}${corazon}</button>`;
+   
+ }
+
+    html += '</div>';
+
+    document.getElementById("diasCalendario").innerHTML = html;
+}
+
+function seleccionarDia(dia) {
+    const mes = fechaCalendario.getMonth();
+    const anio = fechaCalendario.getFullYear();
+
+    diaElegido = `${anio}-${mes + 1}-${dia}`;
+
+    document.getElementById("diaSeleccionado").textContent =
+        `♡ Día seleccionado: ${dia} de ${nombresMeses[mes]} ♡`;
+
+    document.getElementById("textoEvento").value =
+        eventos[diaElegido] || "";
+
+    mostrarEventos();
+}
+
+function mostrarEventos() {
+    const lista = document.getElementById("listaEventos");
+
+    if (!diaElegido || !eventos[diaElegido]) {
+        lista.textContent = "Todavía no hay eventitos ♡";
+        return;
+    }
+
+    lista.textContent = "💗 " + eventos[diaElegido];
+}
+
+function guardarEvento() {
+    if (!diaElegido) {
+        alert("Primero selecciona un día ♡");
+        return;
+    }
+
+    const texto = document.getElementById("textoEvento").value.trim();
+
+    if (texto === "") {
+        delete eventos[diaElegido];
+    } else {
+        eventos[diaElegido] = texto;
+    }
+
+    localStorage.setItem("eventosCokkielife", JSON.stringify(eventos));
+
+    mostrarEventos();
+    mostrarCalendario();
+}
+
+function cambiarMes(cantidad) {
+    fechaCalendario.setMonth(fechaCalendario.getMonth() + cantidad);
+    mostrarCalendario();
+}
+
+mostrarCalendario();
+
+</script>
+
+</body>
+</html>
